@@ -104,16 +104,38 @@ body {
 
 .image {
     height: 100%;
+    position: relative;
+}
+
+.image::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(74, 6, 116, 0.5);
+    border-radius: 0 10px 10px 0;
 }
 
 .card--image {
-    border-radius: 10px;
-    height: 100%;
+    border-radius: 0 10px 10px 0;
+    max-width: 550px;
+    overflow: hidden;
+    object-fit: fill;
 }
 /* MAIN STYLES END */
 
 
 
+/* MEDIA QUERIES */
+@media (max-width: 375px) {
+    
+}
+
+
+
+/* MEDIA QUERIES END */
 
 
 
@@ -123,6 +145,6 @@ body {
 
 /* ATTRIBUTION STYLES */
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 64%, 60%); }
 .attribution a:hover { color: hsl(228, 86%, 78%); }
 /* ATTRIBUTION STYLES END */
